@@ -284,7 +284,7 @@ var bundle = browserify();
 app.use(bundle);
 
 var fileify = require('fileify');
-bundle.use(fileify('templates', __dirname + '/app/views'));
+app.use(fileify('templates', __dirname + '/app/views'));
 
 
 
